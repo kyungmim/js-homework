@@ -11,6 +11,8 @@ const user = {
 4. 로그인 버튼을 클릭시 조건처리
 
 */
+let idValue = ''
+let pwValue = ''
 
 const email = document.querySelector(".user-email-input");
 const password = document.querySelector(".user-password-input");
