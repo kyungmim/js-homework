@@ -22,7 +22,7 @@ function handleChekId() {
   if (emailReg(this.value)) {
     email.classList.remove("is--invalid");
     console.log("입력");
-    idValue = this.value;
+    idValue = this.value; // 정규식이 통과된다면 이라는 과정에만 밸류값을 반환하는건 문제가 생길수도있음..
   } else if (this.value == "") {
     email.classList.remove("is--invalid");
   } else {
@@ -42,13 +42,13 @@ function handleChekPw() {
 }
 
 function handleSubmit(e) {
+  e.preventDefault(); // 아래있으면 안됨.
   if (idValue === user.id && pwValue === user.pw) {
     window.location.href = "welcome.html";
   } else {
     email.classList.add("is--invalid");
     password.classList.add("is--invalid");
   }
-  e.preventDefault();
 }
 
 email.addEventListener("input", handleChekId);
