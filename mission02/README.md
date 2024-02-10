@@ -77,6 +77,6 @@ mainBackground.style.background = `linear-gradient(to bottom, ${
 mainNickName.textContent = data[index - 1].name;
 ```
 
-- data 배열의 name값을 가져와 클릭된 요소에 html 문자를 바꿔줌.
+- data 배열의 name값을 가져와 클릭된 요소 html 문자를 바꿔줌.
 
 ---
